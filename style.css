@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+
+}
+
+body{
+    width: 100wh;
+    height: 100vh;
+    color: white;
+    padding: 80px;
+    background-image: url('/images/bg-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(257, 40%, 49%);
+}
+
+.logo{
+    padding-bottom: 50px;
+}
+
+.container{
+    display: flex;
+}
+
+.text{
+    padding-top: 20px;
+    display: block;
+}
+
+.mockups{
+    margin-right: 50px;
+    width: 50%;
+    height: auto;
+}
+
+h1{
+    font-size: 35px;
+}
+
+p{
+    padding: 30px 0;
+}
+
+button{
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    border-radius: 30px;
+}
+
+ul{
+    text-align: right;
+}
+
+li{
+    font-size: 30px;
+    padding: 10px;
+    display: inline;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1080px) {
+    body{
+        padding: 40px;
+    }
+    .mockups{
+        margin-right: 25px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    p{
+        padding: 15px 0;
+    }
+  }
+
+  @media screen and (max-width: 850px) {
+    .container{
+        display: block;
+    }
+
+    body{
+        background-image: url('/images/bg-mobile.svg');
+    }
+    .mockups{
+        width: 100%;
+    }
+    .logo{
+        text-align: center;
+    }
+    .ikon{
+        margin-top: 20px;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .container{
+        display: block;
+    }
+    .mockups{
+        width: 100%;
+    }
+
+    button{
+        width: 300px;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .text{
+        text-align: center;
+    }
+
+    ul{
+        margin-top: 30px;
+        text-align: center;
+    }
+  }
